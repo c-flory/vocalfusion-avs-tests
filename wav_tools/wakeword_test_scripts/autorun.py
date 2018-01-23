@@ -41,8 +41,11 @@ def call_to_play(args, playback_filename, results, firmware):
         proc.stdout.close()
         return_code = proc.wait()
 
-    except KeyboardInterrupt:
-        print " WE FUCKED UP "
+    except KeyboardInterrupt as e:
+        print "Keyboard Interrupt"
+        print str(e)
+    except Exception as e:
+        print str(e)
 
     with open(args.results_file, "a") as f:
         if test_case in results:
@@ -95,6 +98,8 @@ def test_firmware(firmware, args, results):
                 call_to_play(args, kitchenlist[1], results, firmware)
             if args.kitchen_6db:
                 call_to_play(args, kitchenlist[0], results, firmware)
+        if args.shorttest:
+            call_to_play(args, 'Short_Test.wav', results, firmware)
 
 if __name__ == '__main__':
 
@@ -114,6 +119,7 @@ if __name__ == '__main__':
     argparser.add_argument('--results_file', default="test_results.txt")
     argparser.add_argument('--debug', action='store_true')
     argparser.add_argument('--sdk', action='store_true')
+    argparser.add_argument('--shorttest', action='store_true')
     args=argparser.parse_args()
 
     results = {}
