@@ -1,0 +1,14 @@
+<Channels>
+  <Channel>
+    <Seq>
+      <Mix>
+        <File level="0dB">sine_440.wav</File>
+        <File level="0dB">silence.wav</File>
+      </Mix>
+      <Mix>
+        <File level="0dB">sine_440.wav</File>
+        <File level="0dB">silence.wav</File>
+      </Mix>
+    </Seq>
+  </Channel>
+</Channels>

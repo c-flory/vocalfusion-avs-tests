@@ -1,0 +1,3 @@
+#!/bin/sh
+ssh pi@10.0.98.87 < pw
+. shell_3

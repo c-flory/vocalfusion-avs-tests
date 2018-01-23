@@ -1,0 +1,7 @@
+<Channels>
+  <Channel>
+    <Mix seconds="0.2">
+      <File level="0dB" repeat="10">sine_440.wav</File>
+    </Mix>
+  </Channel>
+</Channels>

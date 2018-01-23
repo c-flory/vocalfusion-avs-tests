@@ -1,0 +1,8 @@
+<Channels>
+  <Channel>
+    <Seq>
+      <File level="0dB">sine_440.wav</File>
+      <File level="-3dB">sine_440_3dB.wav</File>
+    </Seq>
+  </Channel>
+</Channels>

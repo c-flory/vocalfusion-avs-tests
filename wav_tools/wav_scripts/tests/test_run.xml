@@ -1,0 +1,9 @@
+<Test>
+  <File>tests/white_alex_andrew.wav</File>
+  <Delay>10</Delay>
+  <Parameters>
+      <Height>8cm 25cm 40cm</Height>
+      <Distance>40cm 90cm 140cm</Distance>
+      <Angle>0.0 30.0 45.0</Angle>
+  </Parameters>
+</Test>
